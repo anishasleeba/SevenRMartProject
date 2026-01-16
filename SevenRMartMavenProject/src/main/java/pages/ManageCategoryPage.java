@@ -1,14 +1,13 @@
 package pages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import constant.Constant;
 import utilities.FileUploadUtility;
+import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class ManageCategoryPage {
@@ -25,6 +24,7 @@ public class ManageCategoryPage {
 	public WebDriver driver;
 	WaitUtility waitutility = new WaitUtility();
 	FileUploadUtility fileuploadutility = new FileUploadUtility();
+	PageUtility pageutility = new PageUtility();
 	
 	public ManageCategoryPage(WebDriver driver) {
 		this.driver=driver;
@@ -53,8 +53,10 @@ public class ManageCategoryPage {
 	
 	public void clickSaveButton() {
 		body.click();
-		Actions actions = new Actions(driver);
-		actions.sendKeys(Keys.END).perform();
+//		Actions actions = new Actions(driver);
+//		actions.sendKeys(Keys.END).perform();
+		
+		pageutility.sendKeysEnd(driver);
 
 		waitutility.waitForElementToBeClickable(driver, savebutton);
 		savebutton.click();

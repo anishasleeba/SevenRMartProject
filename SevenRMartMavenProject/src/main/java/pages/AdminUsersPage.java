@@ -15,7 +15,8 @@ public class AdminUsersPage {
 	@FindBy(xpath="//input[@id='password']") WebElement passwordfield;
 	@FindBy(xpath="//select[@id='user_type']") WebElement usertypedropdown;
 	@FindBy(xpath="//button[@name='Create']") WebElement savebutton;
-	@FindBy(xpath="//div[contains(@class,'alert-dismissible')]") WebElement alertdiv;
+	//@FindBy(xpath="//div[contains(@class,'alert-dismissible')]") WebElement alertdiv;
+	@FindBy(xpath="//div[contains(@class,'alert-success')]") WebElement alertmsg;
 	
 	public WebDriver driver;
 	
@@ -52,7 +53,8 @@ public class AdminUsersPage {
 	}
 	
 	public Boolean checkAlert() {
-		return alertdiv.isDisplayed();
+		//return alertdiv.isDisplayed();
+		return alertmsg.isDisplayed();
 	}
 	
 }

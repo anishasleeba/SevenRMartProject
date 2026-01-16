@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageFooterPage;
 import utilities.ExcelUtility;
@@ -32,7 +33,7 @@ public class ManageFooterTest extends Base{
 		managefooterpage.enterAddress(address);
 		managefooterpage.clickUpdateButton();
 		Boolean bool=managefooterpage.checkAlert();
-		Assert.assertTrue(bool,"Footer not saved");
+		Assert.assertTrue(bool,Constant.ASSERTFOOTER);
 		
 	}
 

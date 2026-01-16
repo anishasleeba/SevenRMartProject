@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageNewspage;
 import utilities.ExcelUtility;
@@ -28,7 +29,7 @@ public class ManageNewstest extends Base{
 		managenewspage.enterMessage(message);
 		managenewspage.clickSavebutton();
 		Boolean bool = managenewspage.checkAlert();
-		Assert.assertTrue(bool,"by giving new mews ,alert not present");
+		Assert.assertTrue(bool,Constant.ASSERTNEWS);
 	}
 	
 	

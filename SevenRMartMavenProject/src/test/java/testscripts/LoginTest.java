@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
@@ -20,7 +21,7 @@ public class LoginTest extends Base {
 		loginpage.enterPassword(pass);
 		loginpage.signinButtonClick();
 		Boolean homepage = loginpage.isDashboardDisplayed();
-		Assert.assertTrue(homepage, "by giving valid credentials,home page not loading");
+		Assert.assertTrue(homepage, Constant.ASSERTLOGINVALIDCRED);
 	}
 
 	@Test
@@ -34,7 +35,7 @@ public class LoginTest extends Base {
 		loginpage.enterPassword(pass);
 		loginpage.signinButtonClick();
 		Boolean homepage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(homepage, "by giving invalid credentials,alert not displayed");
+		Assert.assertTrue(homepage, Constant.ASSERTLOGININVALIDPASS);
 	}
 
 	@Test
@@ -47,7 +48,7 @@ public class LoginTest extends Base {
 		loginpage.enterPassword(pass);
 		loginpage.signinButtonClick();
 		Boolean homepage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(homepage, "by giving invalid credentials,alert not displayed");
+		Assert.assertTrue(homepage, Constant.ASSERTLOGININVALIDUSE);
 	}
 
 	@Test
@@ -60,7 +61,7 @@ public class LoginTest extends Base {
 		loginpage.enterPassword(pass);
 		loginpage.signinButtonClick();
 		Boolean homepage = loginpage.isAlertDisplayed();
-		Assert.assertTrue(homepage, "by giving invalid credentials,alert not displayed");
+		Assert.assertTrue(homepage, Constant.ASSERTLOGINVALIDCRED);
 	}
 
 }

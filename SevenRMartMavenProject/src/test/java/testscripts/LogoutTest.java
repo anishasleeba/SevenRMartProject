@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.LogoutPage;
 import utilities.ExcelUtility;
@@ -25,7 +26,7 @@ public class LogoutTest extends Base{
 		logout.usernameClick();
 		logout.logoutButtonClick();
 		Boolean bool = logout.signinTextCheck();
-		Assert.assertTrue(bool, "User not logged out");
+		Assert.assertTrue(bool, Constant.ASSERTLOGOUT);
 	}
 	
 }

@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageContactPage;
 import utilities.ExcelUtility;
@@ -37,7 +38,7 @@ public class ManageContactTest extends Base{
 		managecontactpage.enterDeliveryCharge(deliverycharge);
 		managecontactpage.clickUpdateButton();
 		Boolean bool=managecontactpage.checkAlert();
-		Assert.assertTrue(bool,"Contact not saved");
+		Assert.assertTrue(bool,Constant.ASSERTMANAGECONTACT);
 		
 	}
 }

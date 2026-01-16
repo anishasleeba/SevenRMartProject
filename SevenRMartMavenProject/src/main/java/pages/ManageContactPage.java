@@ -1,11 +1,11 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
 import utilities.WaitUtility;
 
 
@@ -22,6 +22,7 @@ public class ManageContactPage {
 
 	public WebDriver driver;
 	WaitUtility waitutility = new WaitUtility();
+	PageUtility pageutility = new PageUtility();
 	
 	public ManageContactPage(WebDriver driver) {
 		this.driver=driver;
@@ -62,8 +63,11 @@ public class ManageContactPage {
 	}
 	
 	public void clickUpdateButton() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", updatebutton);
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("arguments[0].scrollIntoView(true);", updatebutton);
+		
+		pageutility.scrollIntoView(driver, updatebutton);
+		
 		waitutility.waitForElementToBeClickable(driver, updatebutton);
 		updatebutton.click();
 	}
