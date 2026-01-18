@@ -13,14 +13,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import constant.Constant;
-import utilities.ScreenshotUtilities;
+import utilities.ScreenshotUtility;
 
 public class Base {
 
 	public WebDriver driver;
 	FileInputStream fileinputstream;
 	Properties properties;
-	ScreenshotUtilities screenshotutilities;
+	ScreenshotUtility screenshotutilities;
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
@@ -46,7 +46,6 @@ public class Base {
 			throw new Exception("Invalid browser");
 		}
 
-		//driver = new ChromeDriver();
 		driver.get(properties.getProperty("url"));
 		driver.manage().window().maximize();
 	}
@@ -55,7 +54,7 @@ public class Base {
 	public void close( ITestResult iTestResult) throws IOException {
 		
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
-			screenshotutilities = new ScreenshotUtilities();
+			screenshotutilities = new ScreenshotUtility();
 			screenshotutilities.getScreenshot(driver, iTestResult.getName());
 		}
 		driver.quit(); // --> close all tabs

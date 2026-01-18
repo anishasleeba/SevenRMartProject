@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 
-	@Test
+	@Test(groups = { "regression" })
 	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws IOException {
 		String name = ExcelUtility.getStringData(1, 0, "LoginPage");
 		String pass = ExcelUtility.getStringData(1, 1, "LoginPage");
@@ -24,7 +24,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(homepage, Constant.ASSERTLOGINVALIDCRED);
 	}
 
-	@Test
+	@Test(groups = { "regression" })
 	public void verifyTheUserIsAbleToLoginUsingInvalidPassword() throws IOException {
 
 		String name = ExcelUtility.getStringData(2, 0, "LoginPage");
@@ -38,7 +38,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(homepage, Constant.ASSERTLOGININVALIDPASS);
 	}
 
-	@Test
+	@Test(groups = { "regression" })
 	public void verifyTheUserIsAbleToLoginUsingInvalidUsername() throws IOException {
 
 		String name = ExcelUtility.getStringData(3, 0, "LoginPage");
@@ -51,7 +51,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(homepage, Constant.ASSERTLOGININVALIDUSE);
 	}
 
-	@Test
+	@Test(groups = { "regression" })
 	public void verifyTheUserIsAbleToLoginUsingInvalidCredentials() throws IOException {
 
 		String name = ExcelUtility.getStringData(4, 0, "LoginPage");
