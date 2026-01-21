@@ -10,7 +10,7 @@
 			<class name="testscripts.ManageContactTest" />
 			<class name="testscripts.ManageFooterTest" />
 			<class name="testscripts.LoginTest" />
-			<class name="testscripts.LogoutTest" />
+			<class name="testscripts.HomeTest" />
 		</classes>
 	</test> <!--Test -->
 	<test thread-count="5" name="FirefoxTest">
