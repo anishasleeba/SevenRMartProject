@@ -9,7 +9,7 @@ import utilities.PageUtility;
 
 public class AdminUsersPage {
 	
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]") WebElement moreinfo;
+	//@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin'])[2]") WebElement adminmoreinfo;
 	@FindBy(xpath="//section[@class='content']/div[1]/a[1]") WebElement newbutton;
 	@FindBy(xpath="//input[@id='username']") WebElement usernamefield;
 	@FindBy(xpath="//input[@id='password']") WebElement passwordfield;
@@ -26,30 +26,36 @@ public class AdminUsersPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickMoreInfo() {
-		moreinfo.click();
-	}
-	public void clickNewButton() {
+//	public void clickAdminMoreInfo() {
+//		adminmoreinfo.click();
+//	}
+	public AdminUsersPage clickNewButton() {
 		newbutton.click();
+		return this;
 	}
 	
-	public void enterUsername(String username) {
+	public AdminUsersPage enterUsername(String username) {
 		usernamefield.clear();
 		usernamefield.sendKeys(username);
+		return this;
 	}
 	
-	public void enterPassword(String password) {
+	public AdminUsersPage enterPassword(String password) {
 		passwordfield.clear();
 		passwordfield.sendKeys(password);
+		return this;
 	}
 	
-	public void enterUserType(String usertype) {
+	public AdminUsersPage enterUserType(String usertype) {
 		pageutility.selectByVisibleText(usertypedropdown, usertype);
+		return this;
 		
 	}
-	public void signinButtonClick() {
+	public AdminUsersPage signinButtonClick() {
 		
-		savebutton.click();	
+		savebutton.click();
+		return this;	
+		
 	}
 	
 	public Boolean checkAlert() {

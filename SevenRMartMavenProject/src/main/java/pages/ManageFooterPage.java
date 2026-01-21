@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.WaitUtility;
 
 public class ManageFooterPage {
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext'])[3]") WebElement moreinfo;
+//	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext'])[3]") WebElement managefootermoreinfo;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1']") WebElement editbutton;
 	@FindBy(xpath="//input[@id='phone']") WebElement phonefield;
 	@FindBy(xpath="//input[@id='email']") WebElement emailfield;
@@ -23,33 +23,38 @@ public class ManageFooterPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickMoreInfo() {
-		moreinfo.click();
-	}
-	
-	public void clickEditButton() {
+//	public void clickManageFooterMoreInfo() {
+//		managefootermoreinfo.click();
+//	}
+//	
+	public ManageFooterPage clickEditButton() {
 		editbutton.click();
+		return this;
 	}
 	
-	public void enterPhone(String phone) {
+	public ManageFooterPage enterPhone(String phone) {
 		phonefield.clear();
 		phonefield.sendKeys(phone);
+		return this;
 	}
 	
-	public void enterEmail(String email) {
+	public ManageFooterPage enterEmail(String email) {
 		emailfield.clear();
 		emailfield.sendKeys(email);
+		return this;
 	}
 
-	public void enterAddress(String address) {
+	public ManageFooterPage enterAddress(String address) {
 		addressfield.clear();
 		addressfield.sendKeys(address);
+		return this;
 	}
 	
-	public void clickUpdateButton() {
+	public ManageFooterPage clickUpdateButton() {
 
 		waitutility.waitForElementToBeClickable(driver, updatebutton);
 		updatebutton.click();
+		return this;
 	}
 	
 	public Boolean checkAlert() {

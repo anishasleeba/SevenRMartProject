@@ -11,7 +11,7 @@ import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class ManageCategoryPage {
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category'])[2]") WebElement moreinfo;
+//	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category'])[2]") WebElement managecategorymoreinfo;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Category/add']") WebElement newbutton;
 	@FindBy(xpath="//input[@id='category']") WebElement categoryfield;
 	@FindBy(xpath="//input[@id='main_img']") WebElement imagefield;
@@ -31,27 +31,31 @@ public class ManageCategoryPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickMoreInfoButton() {
-		moreinfo.click();
-	}
-	public void clickNewButton() {
+//	public void clickManageCategoryMoreInfoButton() {
+//		managecategorymoreinfo.click();
+//	}
+	public ManageCategoryPage clickNewButton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void enterCategory(String category) {
+	public ManageCategoryPage enterCategory(String category) {
 		categoryfield.sendKeys(category);
+		return this;
 	}
 	
-	public void chooseFile() {
+	public ManageCategoryPage chooseFile() {
 		
 		fileuploadutility.fileUploadUsingSendkeys(imagefield, Constant.IMAGEPATH);
+		return this;
 	}
 	
-	public void selectGroup() {
+	public ManageCategoryPage selectGroup() {
 		groupfield.click();
+		return this;
 	}
 	
-	public void clickSaveButton() {
+	public ManageCategoryPage clickSaveButton() {
 		body.click();
 //		Actions actions = new Actions(driver);
 //		actions.sendKeys(Keys.END).perform();
@@ -60,6 +64,7 @@ public class ManageCategoryPage {
 
 		waitutility.waitForElementToBeClickable(driver, savebutton);
 		savebutton.click();
+		return this;
 	}
 	
 	public Boolean checkAlert() {

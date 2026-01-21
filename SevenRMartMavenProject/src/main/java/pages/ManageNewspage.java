@@ -10,7 +10,7 @@ import utilities.WaitUtility;
 public class ManageNewspage {
 	
 
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement moreInfo;
+//	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']") WebElement managenewsmoreInfo;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/news/add']") WebElement newNews;
 	@FindBy(xpath="//textarea[@id='news']") WebElement enterNews;
 	@FindBy(xpath="//button[@name='create']") WebElement savebutton;
@@ -24,19 +24,22 @@ public class ManageNewspage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickMoreInfo() {
-		waitutility.waitForElementToBeClickable(driver, moreInfo);
-		moreInfo.click();
-	}
-	public void clickNewNews() {
-		newNews.click();	
+//	public void clickManageNewsMoreInfo() {
+//		waitutility.waitForElementToBeClickable(driver, managenewsmoreInfo);
+//		managenewsmoreInfo.click();
+//	}
+	public ManageNewspage clickNewNews() {
+		newNews.click();
+		return this;	
 	}
 	
-	public void enterMessage(String message) {
+	public ManageNewspage enterMessage(String message) {
 		enterNews.sendKeys(message);
+		return this;
 	}
-	public void clickSavebutton() {
+	public ManageNewspage clickSavebutton() {
 		savebutton.click();
+		return this;
 	}
 	
 	public boolean checkAlert() {

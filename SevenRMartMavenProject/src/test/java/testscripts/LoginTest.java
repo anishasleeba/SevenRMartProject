@@ -3,6 +3,7 @@ package testscripts;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import constant.Constant;
@@ -51,11 +52,11 @@ public class LoginTest extends Base {
 		Assert.assertTrue(homepage, Constant.ASSERTLOGININVALIDUSE);
 	}
 
-	@Test(groups = { "regression" })
-	public void verifyTheUserIsAbleToLoginUsingInvalidCredentials() throws IOException {
+	@Test(dataProvider="loginProvider",groups = { "regression" })
+	public void verifyTheUserIsAbleToLoginUsingInvalidCredentials(String name,String pass) throws IOException {
 
-		String name = ExcelUtility.getStringData(4, 0, "LoginPage");
-		String pass = ExcelUtility.getStringData(4, 1, "LoginPage");
+		//String name = ExcelUtility.getStringData(4, 0, "LoginPage");
+		//String pass = ExcelUtility.getStringData(4, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(name);
 		loginpage.enterPassword(pass);
@@ -63,5 +64,10 @@ public class LoginTest extends Base {
 		Boolean homepage = loginpage.isAlertDisplayed();
 		Assert.assertTrue(homepage, Constant.ASSERTLOGINVALIDCRED);
 	}
+	
+	@DataProvider(name = "loginProvider")
+	public Object[][] getDataFromDataProvider() throws IOException {
+
+		return new Object[][] { new Object[] { "admin", "admin22" }, new Object[] { "admin123", "123" },};}
 
 }

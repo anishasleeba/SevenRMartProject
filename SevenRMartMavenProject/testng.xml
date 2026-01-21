@@ -5,12 +5,12 @@
   	<parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="testscripts.AdminUsersTest"/>
+      <class name="testscripts.ManageFooterTest"/>
+      <class name="testscripts.LoginTest"/>      
       <class name="testscripts.ManageNewstest"/>
       <class name="testscripts.ManageCategoryTest"/>
-      <class name="testscripts.ManageContactTest"/>
-      <class name="testscripts.ManageFooterTest"/>
-      <class name="testscripts.LoginTest"/>
-      <class name="testscripts.LogoutTest"/>
+      <class name="testscripts.ManageContactTest"/>     
+      <class name="testscripts.HomeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,19 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="3" skipped="1">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-18T19:51:46 IST" name="paralleltesting" finished-at="2026-01-18T19:51:54 IST" duration-ms="8481">
+  <suite started-at="2026-01-21T21:43:43 IST" name="Suite" finished-at="2026-01-21T21:44:51 IST" duration-ms="68406">
     <groups>
       <group name="regression">
-        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce]" name="verifyTheUserIsAbleToLoginUsingInvalidCredentials" class="testscripts.LoginTest"/>
-        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@6d5620ce]" name="verifyTheUserIsAbleToLoginUsingInvalidPassword" class="testscripts.LoginTest"/>
-        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@6d5620ce]" name="verifyTheUserIsAbleToLoginUsingInvalidUsername" class="testscripts.LoginTest"/>
-        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce]" name="verifyTheUserIsAbleToLoginUsingValidCredentials" class="testscripts.LoginTest"/>
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" name="verifyTheUserIsAbleToLoginUsingInvalidCredentials" class="testscripts.LoginTest"/>
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@7e6f74c]" name="verifyTheUserIsAbleToLoginUsingInvalidPassword" class="testscripts.LoginTest"/>
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@7e6f74c]" name="verifyTheUserIsAbleToLoginUsingInvalidUsername" class="testscripts.LoginTest"/>
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@7e6f74c]" name="verifyTheUserIsAbleToLoginUsingValidCredentials" class="testscripts.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-01-18T19:51:46 IST" name="ChromeTest" finished-at="2026-01-18T19:51:54 IST" duration-ms="8481">
+    <test started-at="2026-01-21T21:43:43 IST" name="Test" finished-at="2026-01-21T21:44:51 IST" duration-ms="68406">
+      <class name="testscripts.ManageCategoryTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.ManageCategoryTest@6a78afa0]" started-at="2026-01-21T21:44:30 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:32 IST" duration-ms="2734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="manageCategory()[pri:0, instance:testscripts.ManageCategoryTest@6a78afa0]" started-at="2026-01-21T21:44:32 IST" name="manageCategory" finished-at="2026-01-21T21:44:37 IST" duration-ms="4912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageCategory -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.ManageCategoryTest@6a78afa0]" started-at="2026-01-21T21:44:37 IST" name="close" finished-at="2026-01-21T21:44:38 IST" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageCategory status=SUCCESS method=ManageCategoryTest.manageCategory()[pri:0, instance:testscripts.ManageCategoryTest@6a78afa0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.ManageCategoryTest -->
+      <class name="testscripts.ManageNewstest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.ManageNewstest@dd05255]" started-at="2026-01-21T21:44:24 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:28 IST" duration-ms="3937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="AlertPresent()[pri:0, instance:testscripts.ManageNewstest@dd05255]" started-at="2026-01-21T21:44:28 IST" name="AlertPresent" finished-at="2026-01-21T21:44:29 IST" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertPresent -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.ManageNewstest@dd05255]" started-at="2026-01-21T21:44:29 IST" name="close" finished-at="2026-01-21T21:44:30 IST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AlertPresent status=SUCCESS method=ManageNewstest.AlertPresent()[pri:0, instance:testscripts.ManageNewstest@dd05255] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.ManageNewstest -->
+      <class name="testscripts.ManageFooterTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.ManageFooterTest@44c03695]" started-at="2026-01-21T21:43:51 IST" name="initialiseBrowser" finished-at="2026-01-21T21:43:57 IST" duration-ms="5747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="manageContact()[pri:0, instance:testscripts.ManageFooterTest@44c03695]" started-at="2026-01-21T21:43:57 IST" name="manageContact" finished-at="2026-01-21T21:43:59 IST" duration-ms="1953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageContact -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.ManageFooterTest@44c03695]" started-at="2026-01-21T21:43:59 IST" name="close" finished-at="2026-01-21T21:43:59 IST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageContact status=SUCCESS method=ManageFooterTest.manageContact()[pri:0, instance:testscripts.ManageFooterTest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.ManageFooterTest -->
+      <class name="testscripts.ManageContactTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.ManageContactTest@2f4948e4]" started-at="2026-01-21T21:44:38 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:41 IST" duration-ms="3734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="manageContact()[pri:0, instance:testscripts.ManageContactTest@2f4948e4]" started-at="2026-01-21T21:44:41 IST" name="manageContact" finished-at="2026-01-21T21:44:44 IST" duration-ms="2994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageContact -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.ManageContactTest@2f4948e4]" started-at="2026-01-21T21:44:44 IST" name="close" finished-at="2026-01-21T21:44:45 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageContact status=SUCCESS method=ManageContactTest.manageContact()[pri:0, instance:testscripts.ManageContactTest@2f4948e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.ManageContactTest -->
       <class name="testscripts.LoginTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:46 IST" name="initialiseBrowser" finished-at="2026-01-18T19:51:51 IST" duration-ms="5648" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:43:59 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:04 IST" duration-ms="4600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,377 +136,143 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:46 IST" name="initialiseBrowser" finished-at="2026-01-18T19:51:51 IST" duration-ms="5652" status="PASS">
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:04 IST" name="verifyTheUserIsAbleToLoginUsingInvalidCredentials" data-provider="loginProvider" finished-at="2026-01-21T21:44:04 IST" duration-ms="428" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[admin]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:46 IST" name="initialiseBrowser" finished-at="2026-01-18T19:51:54 IST" duration-ms="8407" status="FAIL">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[admin22]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
-at testscripts.Base.initialiseBrowser(Base.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:46 IST" name="initialiseBrowser" finished-at="2026-01-18T19:51:51 IST" duration-ms="5647" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:51 IST" name="verifyTheUserIsAbleToLoginUsingInvalidPassword" finished-at="2026-01-18T19:51:52 IST" duration-ms="266" status="FAIL">
-          <exception class="java.io.IOException">
-            <message>
-              <![CDATA[Stream Closed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.IOException: Stream Closed
-at java.base/java.io.FileInputStream.available0(Native Method)
-at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:541)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:1071)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:998)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:929)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:78)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:271)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:235)
-at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:93)
-at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:114)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:211)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:517)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:315)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:289)
-at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-at testscripts.LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassword(LoginTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.IOException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidPassword -->
-        <test-method signature="verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:51 IST" name="verifyTheUserIsAbleToLoginUsingValidCredentials" finished-at="2026-01-18T19:51:52 IST" duration-ms="211" status="FAIL">
-          <exception class="org.apache.poi.EmptyFileException">
-            <message>
-              <![CDATA[The supplied file was empty (zero bytes long)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
-at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:157)
-at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
-at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:147)
-at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:191)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:210)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:517)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:315)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:289)
-at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-at testscripts.LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials(LoginTest.java:16)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.apache.poi.EmptyFileException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
-        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:51 IST" name="verifyTheUserIsAbleToLoginUsingInvalidCredentials" finished-at="2026-01-18T19:51:52 IST" duration-ms="266" status="FAIL">
-          <exception class="org.apache.poi.ooxml.POIXMLException">
-            <message>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.apache.poi.ooxml.POIXMLException: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:73)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:315)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:289)
-at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-at testscripts.LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials(LoginTest.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
-at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:405)
-at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:950)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:523)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
-... 20 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.apache.poi.ooxml.POIXMLException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidCredentials -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:52 IST" name="close" finished-at="2026-01-18T19:51:52 IST" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:04 IST" name="close" finished-at="2026-01-21T21:44:05 IST" duration-ms="235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidCredentials status=FAILURE method=LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidCredentials status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:52 IST" name="close" finished-at="2026-01-18T19:51:52 IST" duration-ms="526" status="FAIL">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:05 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:09 IST" duration-ms="4540" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidPassword status=FAILURE method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@6d5620ce] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to stop.
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [622742ace814a75d76bb074f5362f8aa, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622742ace814a75d76bb074f5362f8aa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [622742ace814a75d76bb074f5362f8aa, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 622742ace814a75d76bb074f5362f8aa
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:446)
-at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:436)
-at testscripts.Base.close(Base.java:61)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@41e8ffdd[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@d5f5e6[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000001aac1279c80@4ea7124]] rejected from java.util.concurrent.ThreadPoolExecutor@e703d70[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 48]
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
-... 27 more
-Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@41e8ffdd[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@d5f5e6[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000001aac1279c80@4ea7124]] rejected from java.util.concurrent.ThreadPoolExecutor@e703d70[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 48]
-at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
-at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
-at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
-at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.executeAsync(JdkHttpClient.java:380)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:409)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-... 3 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:52 IST" name="close" finished-at="2026-01-18T19:51:52 IST" duration-ms="530" status="PASS">
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:09 IST" name="verifyTheUserIsAbleToLoginUsingInvalidCredentials" data-provider="loginProvider" finished-at="2026-01-21T21:44:10 IST" duration-ms="432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidCredentials status=FAILURE method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials()[pri:0, instance:testscripts.LoginTest@6d5620ce] output={null}]]]>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidCredentials -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:10 IST" name="close" finished-at="2026-01-21T21:44:10 IST" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidCredentials status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:54 IST" name="verifyTheUserIsAbleToLoginUsingInvalidUsername" finished-at="2026-01-18T19:51:54 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\RAHULG~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61920}, goog:processID: 2612, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61920/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
-at testscripts.Base.initialiseBrowser(Base.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:10 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:14 IST" duration-ms="4634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:14 IST" name="verifyTheUserIsAbleToLoginUsingInvalidPassword" finished-at="2026-01-21T21:44:15 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidPassword -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:15 IST" name="close" finished-at="2026-01-21T21:44:15 IST" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidPassword status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassword()[pri:0, instance:testscripts.LoginTest@7e6f74c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:15 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:19 IST" duration-ms="3683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:19 IST" name="verifyTheUserIsAbleToLoginUsingInvalidUsername" finished-at="2026-01-21T21:44:19 IST" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidUsername -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@6d5620ce]" started-at="2026-01-18T19:51:54 IST" name="close" finished-at="2026-01-18T19:51:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:19 IST" name="close" finished-at="2026-01-21T21:44:20 IST" duration-ms="213" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidUsername status=SKIP method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@6d5620ce] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidUsername status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsername()[pri:0, instance:testscripts.LoginTest@7e6f74c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:20 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:23 IST" duration-ms="3031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:23 IST" name="verifyTheUserIsAbleToLoginUsingValidCredentials" finished-at="2026-01-21T21:44:24 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.LoginTest@7e6f74c]" started-at="2026-01-21T21:44:24 IST" name="close" finished-at="2026-01-21T21:44:24 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscripts.LoginTest@7e6f74c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -402,6 +280,62 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testscripts.LoginTest -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- paralleltesting -->
+      <class name="testscripts.HomeTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.HomeTest@1f2586d6]" started-at="2026-01-21T21:44:45 IST" name="initialiseBrowser" finished-at="2026-01-21T21:44:50 IST" duration-ms="5490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="logout()[pri:0, instance:testscripts.HomeTest@1f2586d6]" started-at="2026-01-21T21:44:50 IST" name="logout" finished-at="2026-01-21T21:44:51 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.HomeTest@1f2586d6]" started-at="2026-01-21T21:44:51 IST" name="close" finished-at="2026-01-21T21:44:51 IST" duration-ms="218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=HomeTest.logout()[pri:0, instance:testscripts.HomeTest@1f2586d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.HomeTest -->
+      <class name="testscripts.AdminUsersTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testscripts.AdminUsersTest@765d7657]" started-at="2026-01-21T21:43:43 IST" name="initialiseBrowser" finished-at="2026-01-21T21:43:48 IST" duration-ms="4804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrowser -->
+        <test-method signature="adminUsers()[pri:0, instance:testscripts.AdminUsersTest@765d7657]" started-at="2026-01-21T21:43:48 IST" name="adminUsers" finished-at="2026-01-21T21:43:51 IST" duration-ms="3358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminUsers -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:testscripts.AdminUsersTest@765d7657]" started-at="2026-01-21T21:43:51 IST" name="close" finished-at="2026-01-21T21:43:51 IST" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminUsers status=SUCCESS method=AdminUsersTest.adminUsers()[pri:0, instance:testscripts.AdminUsersTest@765d7657] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testscripts.AdminUsersTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

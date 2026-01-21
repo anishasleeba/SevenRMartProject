@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import pages.LoginPage;
-import pages.LogoutPage;
+import pages.HomePage;
 import utilities.ExcelUtility;
 
-public class LogoutTest extends Base{
+public class HomeTest extends Base{
 
 	@Test
 	public void logout() throws IOException {
@@ -22,7 +22,7 @@ public class LogoutTest extends Base{
 		loginpage.enterPassword(pass);
 		loginpage.signinButtonClick();
 
-		LogoutPage logout = new LogoutPage(driver);
+		HomePage logout = new HomePage(driver);
 		logout.usernameClick();
 		logout.logoutButtonClick();
 		Boolean bool = logout.signinTextCheck();

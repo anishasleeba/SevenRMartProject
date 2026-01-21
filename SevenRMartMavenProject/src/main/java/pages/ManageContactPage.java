@@ -10,7 +10,7 @@ import utilities.WaitUtility;
 
 
 public class ManageContactPage {
-	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]") WebElement moreinfo;
+//	@FindBy(xpath="(//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact'])[2]") WebElement managecontactmoreinfo;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/contact/edit_contact?edit=1']") WebElement editbutton;
 	@FindBy(xpath="//input[@id='phone']") WebElement phonefield;
 	@FindBy(xpath="//input[@id='email']") WebElement emailfield;
@@ -29,40 +29,46 @@ public class ManageContactPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickMoreInfo() {
-		moreinfo.click();
-	}
+//	public void clickManageContactMoreInfo() {
+//		managecontactmoreinfo.click();
+//	}
 	
-	public void clickEditButton() {
+	public ManageContactPage clickEditButton() {
 		editbutton.click();
+		return this;
 	}
 	
-	public void enterPhone(String phone) {
+	public ManageContactPage enterPhone(String phone) {
 		phonefield.clear();
 		phonefield.sendKeys(phone);
+		return this;
 	}
 	
-	public void enterEmail(String email) {
+	public ManageContactPage enterEmail(String email) {
 		emailfield.clear();
 		emailfield.sendKeys(email);
+		return this;
 	}
 
-	public void enterAddress(String address) {
+	public ManageContactPage enterAddress(String address) {
 		addressfield.clear();
 		addressfield.sendKeys(address);
+		return this;
 	}
 	
-	public void enterDeliveryTime(String deliverytime) {
+	public ManageContactPage enterDeliveryTime(String deliverytime) {
 		deliverytimefield.clear();
 		deliverytimefield.sendKeys(deliverytime);
+		return this;
 	}
 	
-	public void enterDeliveryCharge(String deliverycharge) {
+	public ManageContactPage enterDeliveryCharge(String deliverycharge) {
 		deliverychargefield.clear();
 		deliverychargefield.sendKeys(deliverycharge);
+		return this;
 	}
 	
-	public void clickUpdateButton() {
+	public ManageContactPage clickUpdateButton() {
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 		//js.executeScript("arguments[0].scrollIntoView(true);", updatebutton);
 		
@@ -70,6 +76,7 @@ public class ManageContactPage {
 		
 		waitutility.waitForElementToBeClickable(driver, updatebutton);
 		updatebutton.click();
+		return this;
 	}
 	
 	public Boolean checkAlert() {
